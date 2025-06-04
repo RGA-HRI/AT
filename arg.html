@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,47 +98,30 @@
     </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analysis & PDEs</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
 
 <html>
 <head>
-
+<meta charset="utf-8" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+history.replaceState(null, "", "");
+</script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--  <link rel="stylesheet" href="/resources/demos/style.css" /> -->
   <script>
   $(function() {
-    $( "div#fall_2012" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#spring_2013" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#fall_2013" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#spring_2014" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#fall_2014" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#spring_2015" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#semesters" ).tabs({ active: 5 });
-    $( "div#teachingFall_2014" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2015" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2016" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingFall_2016" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2017" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingFall_2017" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2018" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2019" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingFall_2021" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2022" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingFall_2022" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2023" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingFall_2023" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2024" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingFall_2024" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSpring_2025" ).accordion({active: false, collapsible: true, header: "h4"});
-    $( "div#teachingSemesters" ).tabs({active: 15});
+    $( "div#C" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#E" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RI" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RP1" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RP2" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#S" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#L" ).accordion({active: false, collapsible: true, header: "h4"});    
+    $( "div#T" ).tabs({active: 15});
 function getAnchor(url)
 {
     var index = url.lastIndexOf('#');
@@ -150,73 +132,31 @@ currentAnchor = getAnchor(location.href).substring(1);
 if (currentAnchor != '')
 {
         console.log(currentAnchor);
-        $( "div#teachingSemesters" ).tabs({active: currentAnchor});
+        $( "div#T" ).tabs({active: currentAnchor});
 }
   });
-history.replaceState(null, "", "https://web.math.princeton.edu/~shapiro/teaching.html#" + currentAnchor);
+history.replaceState(null, "", "" + currentAnchor);
  </script>
+<title>
+Analysis Group at HRI
+</title>
+<base target="_blank">
 </head>
 <body>
-<h3>The page is primarily for the Graduate Courseworks, Research Works, and related activities in Analysis at HRI. </h3>
-<h2>Contact</h2>
-e-mail <a HREF='mailto:@hri.res.in'>analysis@hri.res.in</a>.
+<br>
+The page is primarily for the Graduate Courseworks, Research Works, and related activities in Analysis at HRI. 
+
 <br><hr>
-<h2>The page is primarily for the Graduate Courseworks, Research Works, and related activities in Analysis at HRI. </h2>
-<div id='teachingSemesters'>
+
+<h3> Graduate Courseworks </h3>
+<div id='T'>
 <ul>
-<li><a HREF='#teachingFall_2014'>Compulsory</a>
-<li><a HREF='#teachingSpring_2015'>Electives</a>
+<li><a HREF='#C'>Year I  (Compulsory)</a>
+<li><a HREF='#E'>Year II (Electives)</a>
 </ul>
-<div id="teachingFall_2014">
-<h3>Analysis 1 Recitation Sessions</h3>
-<a HREF='http://www.math.ethz.ch/education/bachelor/lectures/hs2014/math/analysis1' TARGET='_blank'>The course website</a> contains logistical information as well as the homework and their solutions. Below are "scripts" (summaries) of the recitation sessions I held:
-	<ul>
-		<li><a HREF='PDFs/teaching/analysis_1_fall_2014/Exercise_01.pdf'>Recitation Session of Week 1</a>
-		<li><a HREF="PDFs/teaching/analysis_1_fall_2014/Colloquium_Week_2_The_Peano_Axioms.pdf">Colloqium of Week 2</a>--The Peano Axioms (from Halmos).
-		nalysis_1_fall_2014/Recitation_Week_14.pdf">Recitation Session of Week 14</a>
-		
-	</ul>
-<p>If you plan to submit your homework, it would make me very happy if you used <a HREF='http://www.lyx.org' TARGET='_BLANK'>LyX</a>.
-</div>
-<div id="teachingSpring_2015">
-<h3>Analysis 2 Recitation Sessions</h3>
-<a HREF='http://www.math.ethz.ch/education/bachelor/lectures/fs2015/math/analysis2' TARGET='_blank'>The course website</a> contains logistical information as well as the homework and their solutions. Below are "scripts" (summaries) of the recitation sessions I held:
-	<ul>
-		<li><a HREF="PDFs/teaching/analysis_2_spring_2015/Analysis_2_Spring_2015_Recitation_Session_of_Week_1.pdf">Recitation Session of Week 1</a>
-		<li><a HREF="PDFs/teaching/analysis_2_spring_2015/solution_1_hints_flat.pdf">Hints for Homework 1</a>
-		
-	</ul>
-<p>If you plan to submit your homework, please consider typing it into the computer using, for example, <a HREF='http://www.lyx.org' TARGET='_BLANK'><img SRC='lyx.png' width='20px' height='20px'></a>.
-<p><a HREF='PDFs/teaching/analysis_2_spring_2015/Analysis_vonsimon_at_student.ethz.ch.pdf'>Full hand-written notes</a> (in German, 91MB) were kindly provided by <a HREF='mailto:vonsimon@student.ethz.ch'>Simon Vonlanthen</a>.
-</div>
-
-</body>
-</html>
 
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graduate Courseworks in Analysis</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!--<center>
-<h1>  RGA- HRI. </h1>
-</center>-->
-<h3>  </h3>
-The page is primarily for the Graduate Courseworks, Research Projects and related activities in Analysis at HRI.
-<br>
-<br>
-<h3> Graduate Courseworks in Analysis at HRI: </h3>
-
-<li> Year I (Compulsory)
+<div id="C">
 <ul>
 
 <li> Analysis I 
@@ -243,8 +183,36 @@ The page is primarily for the Graduate Courseworks, Research Projects and relate
 (*The topics covered can differ depending on the instructor.) 
 </li>	
 
-<br>	
-<li> Year II (Optional)
+
+<br>
+<h3> <a href="https://www.hri.res.in/~mathgradp/timetable.html">Time Table</a>  & Lecture Notes: </h3>
+
+<li> Analysis I 
+
+<ul>
+° Instructor-  Dr. Amrita Ghosh.
+</ul>
+<ul>
+°°  
+	<a href="https://www.dropbox.com/scl/fi/xkml2g695kx7cnbi3wglm/Analysis-I.pdf?rlkey=76sqzhaweyq6fr354ii6ejb42&st=towa2osf&dl=0">Lecture notes</a>
+</ul>
+</li>
+
+
+<li> Analysis II 
+
+<ul>
+° Instructor-  Dr. Tuhin Ghosh.
+</ul>
+<ul>
+°° 
+	<a href="https://www.dropbox.com/scl/fi/97e9z96ak5upc81m35el5/Analysis_II_Functional_Analysis.pdf?rlkey=2b6dzhpnee2aaztf1jiwlc2ad&st=q08txog0&dl=0">Lecture notes</a>
+</ul>
+</li>	
+
+</div>
+
+<div id="E">	
 <ul>
 
 <li>
@@ -266,50 +234,45 @@ Analysis III
 </ul>
 </li>
 
-<br>
 <h3> <a href="https://www.hri.res.in/~mathgradp/timetable.html">Time Table</a>  & Lecture Notes: </h3>
 
-<li> Analysis I 
 
-<ul>
-° Instructor-  Dr. Amrita Ghosh.
-</ul>
-<ul>
-°°  
-	<a href="https://www.dropbox.com/scl/fi/xkml2g695kx7cnbi3wglm/Analysis-I.pdf?rlkey=76sqzhaweyq6fr354ii6ejb42&st=towa2osf&dl=0">Lecture notes.</a>
-</ul>
-</li>
-
-
-<li> Analysis II 
+<li> Analysis III_A 
 
 <ul>
 ° Instructor-  Dr. Tuhin Ghosh.
 </ul>
 <ul>
 °° 
-	<a href="https://www.dropbox.com/scl/fi/97e9z96ak5upc81m35el5/Analysis_II_Functional_Analysis.pdf?rlkey=2b6dzhpnee2aaztf1jiwlc2ad&st=q08txog0&dl=0">Lecture notes. </a>
+	<a href="https://www.dropbox.com/scl/fi/s19kvrn7jhdk3bniu0psi/Analysis_III.pdf?rlkey=kpdsb2er9o25fxwvlzc7j5mdw&st=kl6d0idy&dl=0">Lecture notes</a>
 </ul>
-</li>	
+</li>
 
-<li> Analysis III 
+<li> Analysis III_B
 
 <ul>
 ° Instructor-  Dr. Tuhin Ghosh.
 </ul>
 <ul>
 °° 
-	<a href="https://www.dropbox.com/scl/fi/s19kvrn7jhdk3bniu0psi/Analysis_III.pdf?rlkey=kpdsb2er9o25fxwvlzc7j5mdw&st=kl6d0idy&dl=0">Lecture notes.</a>
+	<a href="https://www.dropbox.com/scl/fi/s19kvrn7jhdk3bniu0psi/Analysis_III.pdf?rlkey=kpdsb2er9o25fxwvlzc7j5mdw&st=kl6d0idy&dl=0">Lecture notes</a>
 </ul>
 </li>
+</div>
+</div>
+<br><hr>
 
-	
-<br>
-<br>
-<h3> Research Interests: </h3>
-
+<h3>Research </h3>
+<div id='T'>
+<ul>
+<li><a HREF='#RI'>Research Interests</a>
+<li><a HREF='#RP1'>Research Projects</a>
+<li><a HREF='#RP2'>Research Works (Recent Preprints)</a>
+</ul>
+<div id="RI">
+<ul>
 <li> Topics in Analysis and PDEs
-	
+<br><hr>	
 <ul>
 								     
 <li>
@@ -326,7 +289,7 @@ Carleman estimates, Unique Continuation, Calderon problem, Scattering problem, G
 </ul>
 <br>
 <ul>
-°Reference:
+°References:
 </ul>
 <br>
 <ul>
@@ -387,7 +350,7 @@ Homogenization processes provide a macro scale approximation to a problem with 
 
 <br>
 <ul>
-°Reference:
+°References:
 </ul>
 
 <br>
@@ -399,16 +362,10 @@ Homogenization processes provide a macro scale approximation to a problem with 
 2. Allaire, Gregoire, Shape Optimization by the Homogenization Method. Springer-Verlag.
 </ul>
 </li>
-
- 
 </ul>
 </li>
-	
-<br>
-<h3>
-Some Past Research Projects: 
-</h3>
-
+</div>
+<div id="RP1">	
 <ul>
 <a href="https://drive.google.com/file/d/1Gk-w0T6oLZto8txwFRBaOTu-9YbrjpM4/view?usp=drive_link">The Malgrange-Ehrenpreis Theorem.</a>
 </ul>
@@ -421,30 +378,49 @@ Some Past Research Projects:
 <ul>
 <a href="https://drive.google.com/file/d/17bipG3V19bnXN9CbQAnPBHQ3BHzt_tj3/view?usp=drive_link">On Inverse Problems for Dynamical Sysytem.</a>
 </ul>
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<hr/><hr/>
-<h3>Links:</h3>
+</div>
+<div id="RP2">
+	
 <ul>
-<li><a href="https://www.hri.res.in/~libweb/">HRI Library</a>.</li>
+<a href="https://arxiv.org/pdf/2502.04717">Adaptive Modified Weak Galerkin Method for Obstacle Problem.</a>
 </ul>
+<ul>
+<a href="https://arxiv.org/pdf/2504.20517">Boundary Control and Calderón type Inverse Problems in Non-local heat equation.</a>
+</ul>
+<ul>
+<a href="https://arxiv.org/pdf/2505.12255">Anisotropic Calderón Problem for a Non-Local Second Order Elliptic Operator.</a>
+</ul>
+<ul>
+<a href="https://arxiv.org/pdf/2502.00710">Fractional anisotropic Calderón problem with external data.</a>
+</ul>
+</div>
+</div>
+<br><hr>
+
+<h3> Schools </h3>
+<div id='T'>
+<ul>
+<li><a HREF='#S'>Workshops </a>
+<li><a HREF='#L'>Some Links</a>
+</ul>
+
+
+<div id="S">
 <ul>
 <li><a href="https://rga-hri.github.io/AT/ist.html"target="Seminars on Harmonic Analysis and PDEs"> Seminars on Harmonic Analysis and PDEs</a></li>
 </ul>
 <ul>
 <li><a href="https://www.hri.res.in/~analysis/2024/Welcome.html"target="Workshop on Harmonic Analysis: Fourier Multipliers and Related Topics"> Workshop on Harmonic Analysis: Fourier Multipliers and Related Topics </a></li>
 </ul>
+</div>
 
-<br>
+<div id="L">
+<ul>
+<li><a href="https://www.hri.res.in/~libweb/">HRI Library</a>.</li>
+</ul>
+</div>
+<br><hr>
 
+e-mail <a HREF='mailto:@hri.res.in'>analysis@hri.res.in</a>.
 </body>
 </html>
-
