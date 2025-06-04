@@ -5,19 +5,111 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analysis Group at HRI</title>
+  <title>Graduate Studies</title>
 
   <style>
     
 
+
+.rc_nav {
+  overflow: hidden;
+  background-color: #777a8a;
+  text-align: center;
+  
+  z-index: 6;
+}
+
+.rc_nav a {
+ display: inline-block;
+ margin-right: -4px;  /* inline-block gap fix */
+ color: #fff;
+ padding: 22px 22px;
+ text-decoration: none;
+ font-family: Poppins;
+ font-size: 20px;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;
+ -ms-transition: background 0.3s linear;
+ -o-transition: background 0.3s linear;
+ transition: background 0.3s linear;
+ z-index: 9;
+}
+
+.rc_nav a:hover {
+  background-color: #575b69;
+  color: #bdfe0e2;
+}
+
+.rc_nav .icon {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 820px) {
+  .rc_nav a {display: none;}
+  .rc_nav a.icon {
+    float: right;
+    display: block;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .rc_nav.responsive 
+  {
+    position: relative; 
+  }
+  .rc_nav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .rc_nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+}
+  </style>
+</head>
+<body>
+  
+    
     <div class="rc_nav" id="centered_nav">
     <a href="https://www.hri.res.in/~mathgradp/mathprog.html" title="Research Group/Activity in Analysis at HRI">Research Group/Activity in Analysis at HRI</a>
     <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     
- 
+   
+    
+    <script>
+        function myFunction() {
+    var x = document.getElementById("centered_nav");
+    if (x.className === "rc_nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "rc_nav";
+    }
+}
+      
+      
+    </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduate Courseworks in Analysis</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 <html>
 <head>
