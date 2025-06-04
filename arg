@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduate Studies</title>
+
+  <style>
+    
+
+
+.rc_nav {
+  overflow: hidden;
+  background-color: #777a8a;
+  text-align: center;
+  
+  z-index: 6;
+}
+
+.rc_nav a {
+ display: inline-block;
+ margin-right: -4px;  /* inline-block gap fix */
+ color: #fff;
+ padding: 22px 22px;
+ text-decoration: none;
+ font-family: Poppins;
+ font-size: 20px;
+ -webkit-transition: background 0.3s linear;
+ -moz-transition: background 0.3s linear;
+ -ms-transition: background 0.3s linear;
+ -o-transition: background 0.3s linear;
+ transition: background 0.3s linear;
+ z-index: 9;
+}
+
+.rc_nav a:hover {
+  background-color: #575b69;
+  color: #bdfe0e2;
+}
+
+.rc_nav .icon {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 820px) {
+  .rc_nav a {display: none;}
+  .rc_nav a.icon {
+    float: right;
+    display: block;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .rc_nav.responsive 
+  {
+    position: relative; 
+  }
+  .rc_nav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .rc_nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+}
+  </style>
+</head>
+<body>
+  
+    
+    <div class="rc_nav" id="centered_nav">
+    <a href="https://www.hri.res.in/~mathgradp/mathprog.html" title="Research Group/Activity in Analysis at HRI">Research Group/Activity in Analysis at HRI</a>
+    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+   
+    
+    <script>
+        function myFunction() {
+    var x = document.getElementById("centered_nav");
+    if (x.className === "rc_nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "rc_nav";
+    }
+}
+      
+      
+    </script>
+</body>
+</html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+history.replaceState(null, "", "https://web.math.princeton.edu/~shapiro/teaching.html");
+</script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--  <link rel="stylesheet" href="/resources/demos/style.css" /> -->
+  <script>
+  $(function() {
+    $( "div#fall_2012" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#spring_2013" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#fall_2013" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#spring_2014" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#fall_2014" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#spring_2015" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#semesters" ).tabs({ active: 5 });
+    $( "div#teachingFall_2014" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2015" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2016" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingFall_2016" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2017" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingFall_2017" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2018" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2019" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingFall_2021" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2022" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingFall_2022" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2023" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingFall_2023" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2024" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingFall_2024" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSpring_2025" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#teachingSemesters" ).tabs({active: 15});
+function getAnchor(url)
+{
+    var index = url.lastIndexOf('#');
+    if (index != -1)
+        return url.substring(index);
+}
+currentAnchor = getAnchor(location.href).substring(1);
+if (currentAnchor != '')
+{
+        console.log(currentAnchor);
+        $( "div#teachingSemesters" ).tabs({active: currentAnchor});
+}
+  });
+history.replaceState(null, "", "https://web.math.princeton.edu/~shapiro/teaching.html#" + currentAnchor);
+ </script>
+<title>
+Analysis Group at HRI
+</title>
+<base target="_blank">
+</head>
+<body>
+<h1>
+Analysis Group at HRI
+</h1>
+<h2>Contact</h2>
+e-mail <a HREF='mailto:@hri.res.in'>analysis@hri.res.in</a>.
+<br><hr>
+<h2>The page is primarily for the Graduate Courseworks, Research Works, and related activities in Analysis at HRI. </h2>
+<div id='teachingSemesters'>
+<ul>
+<li><a HREF='#teachingFall_2014'>Compulsory</a>
+<li><a HREF='#teachingSpring_2015'>Electives</a>
+</ul>
+<div id="teachingFall_2014">
+<h3>Analysis 1 Recitation Sessions</h3>
+<a HREF='http://www.math.ethz.ch/education/bachelor/lectures/hs2014/math/analysis1' TARGET='_blank'>The course website</a> contains logistical information as well as the homework and their solutions. Below are "scripts" (summaries) of the recitation sessions I held:
+	<ul>
+		<li><a HREF='PDFs/teaching/analysis_1_fall_2014/Exercise_01.pdf'>Recitation Session of Week 1</a>
+		<li><a HREF="PDFs/teaching/analysis_1_fall_2014/Colloquium_Week_2_The_Peano_Axioms.pdf">Colloqium of Week 2</a>--The Peano Axioms (from Halmos).
+		nalysis_1_fall_2014/Recitation_Week_14.pdf">Recitation Session of Week 14</a>
+		
+	</ul>
+<p>If you plan to submit your homework, it would make me very happy if you used <a HREF='http://www.lyx.org' TARGET='_BLANK'>LyX</a>.
+</div>
+<div id="teachingSpring_2015">
+<h3>Analysis 2 Recitation Sessions</h3>
+<a HREF='http://www.math.ethz.ch/education/bachelor/lectures/fs2015/math/analysis2' TARGET='_blank'>The course website</a> contains logistical information as well as the homework and their solutions. Below are "scripts" (summaries) of the recitation sessions I held:
+	<ul>
+		<li><a HREF="PDFs/teaching/analysis_2_spring_2015/Analysis_2_Spring_2015_Recitation_Session_of_Week_1.pdf">Recitation Session of Week 1</a>
+		<li><a HREF="PDFs/teaching/analysis_2_spring_2015/solution_1_hints_flat.pdf">Hints for Homework 1</a>
+		
+	</ul>
+<p>If you plan to submit your homework, please consider typing it into the computer using, for example, <a HREF='http://www.lyx.org' TARGET='_BLANK'><img SRC='lyx.png' width='20px' height='20px'></a>.
+<p><a HREF='PDFs/teaching/analysis_2_spring_2015/Analysis_vonsimon_at_student.ethz.ch.pdf'>Full hand-written notes</a> (in German, 91MB) were kindly provided by <a HREF='mailto:vonsimon@student.ethz.ch'>Simon Vonlanthen</a>.
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduate Courseworks in Analysis</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--<center>
+<h1>  RGA- HRI. </h1>
+</center>-->
+<h3>  </h3>
+The page is primarily for the Graduate Courseworks, Research Projects and related activities in Analysis at HRI.
+<br>
+<br>
+<h3> Graduate Courseworks in Analysis at HRI: </h3>
+
+<li> Year I (Compulsory)
+<ul>
+
+<li> Analysis I 
+	
+
+<ul>	
+° Measure Theory, Fourier Analysis, Calculus on Normed Linear Spaces.
+</ul>
+	
+</li>
+
+<br>
+	
+<li> Analysis II 
+	
+
+<ul>	
+°  Topological Vector Spaces and Functional Analysis, Spectral Theory, Distribution (and Fourier) Theory.
+</ul>
+
+</li>
+
+</ul>
+(*The topics covered can differ depending on the instructor.) 
+</li>	
+
+<br>	
+<li> Year II (Optional)
+<ul>
+
+<li>
+Analysis III 
+</li>
+
+<ul>	
+° Distributions, Fundamental solutions, Sobolev Spaces. 
+</ul>
+
+<ul>
+° L^2 theory of Linear Elliptic equations, Stability estimates, Regularity results.
+</ul>
+
+<ul>
+° Linear Evolution equations, Cauchy problem,  Galerkin's approach, Semigroup Theory.
+</ul>
+
+</ul>
+</li>
+
+<br>
+<h3> <a href="https://www.hri.res.in/~mathgradp/timetable.html">Time Table</a>  & Lecture Notes: </h3>
+
+<li> Analysis I 
+
+<ul>
+° Instructor-  Dr. Amrita Ghosh.
+</ul>
+<ul>
+°°  
+	<a href="https://www.dropbox.com/scl/fi/xkml2g695kx7cnbi3wglm/Analysis-I.pdf?rlkey=76sqzhaweyq6fr354ii6ejb42&st=towa2osf&dl=0">Lecture notes.</a>
+</ul>
+</li>
+
+
+<li> Analysis II 
+
+<ul>
+° Instructor-  Dr. Tuhin Ghosh.
+</ul>
+<ul>
+°° 
+	<a href="https://www.dropbox.com/scl/fi/97e9z96ak5upc81m35el5/Analysis_II_Functional_Analysis.pdf?rlkey=2b6dzhpnee2aaztf1jiwlc2ad&st=q08txog0&dl=0">Lecture notes. </a>
+</ul>
+</li>	
+
+<li> Analysis III 
+
+<ul>
+° Instructor-  Dr. Tuhin Ghosh.
+</ul>
+<ul>
+°° 
+	<a href="https://www.dropbox.com/scl/fi/s19kvrn7jhdk3bniu0psi/Analysis_III.pdf?rlkey=kpdsb2er9o25fxwvlzc7j5mdw&st=kl6d0idy&dl=0">Lecture notes.</a>
+</ul>
+</li>
+
+	
+<br>
+<br>
+<h3> Research Interests: </h3>
+
+<li> Topics in Analysis and PDEs
+	
+<ul>
+								     
+<li>
+<U>Inverse Problems</U> 
+	
+<br>
+<ul>
+Mathematical inverse problems refer to a class of problems where the goal is to determine the unknown causes or parameters of a system based on observed data or measurements. A typical inverse problem is to recover the coefficients of a PDE, i.e. physical properties like conductivity, medium propagation, internal density distribution etc. from the boundary or exterior measurements.
+</ul>
+<br>
+<ul>
+°Some familiar Topics:
+Carleman estimates, Unique Continuation, Calderon problem, Scattering problem, Gelfand problem.
+</ul>
+<br>
+<ul>
+°Reference:
+</ul>
+<br>
+<ul>
+1. Isakov, Victor, Inverse problems for Partial Differential Equations. Springer-Verlag.
+</ul>
+
+<ul>
+2. Eskin, Gregory, Lectures on Linear Partial Differential Equations. American Mathematical Society. 
+</ul>
+
+<ul>
+3. Katchalov, Alexander; Kurylev, Yaroslav; Lassas, Matti; Inverse Boundary Spectral Problems.  Chapman & Hall/CRC.
+</ul>
+
+</li>
+
+<br>
+<li>
+<U>Introduction to the Mathematical Fluid Dynamics</U>
+<br>
+<ul>
+Mathematical fluid dynamics deals with the study of fluid flow using mathematical models and techniques. It provides a theoretical framework to understand and analyze the behavior of fluids in various physical systems. This involves PDEs (for example Navier-Stokes equation) which are usually derived from the principles of conservation of mass, momentum, and energy.
+</ul>
+<br>
+<ul>
+°Some familar Topics: Boundary layers, Instability analysis, PDEs as gradient flows, Fluid-structure Interaction problem, Thin film flows.
+</ul>
+<br>
+<ul>
+°References:
+</ul>
+<br>
+<ul>
+1. Galdi, G. P.,  An introduction to the mathematical theory of the Navier-Stokes equations. Steady-state problems. Springer.
+</ul>
+<ul>
+2. Temam, Roger, Navier-Stokes equations. North-Holland Publishing House.  
+</ul>
+<ul>
+3. Ockendon, H.; Ockendon, J. R., Viscous Flow. Cambridge University Press. 
+</ul>
+
+</li>
+ 
+<br>
+<li>
+<U>Homogenization</U> 
+
+<br>
+<ul>
+Homogenization processes provide a macro scale approximation to a problem with heterogeneities at micro scale by suitably averaging out small scales and incorporating their effects on large scales. These effects are quantified by the so-called homogenized coefficients. A common thread is often projected in order to come up with their optimal bounds, spectral characterization etc. 
+</ul>
+	
+<br>
+<ul>
+°Some familiar Topics: Asymptotic Analysis, H-limit, Compensated Compactness, H-Measure, Relative homogenization. 
+</ul>
+
+<br>
+<ul>
+°Reference:
+</ul>
+
+<br>
+<ul>
+1. Tartar, Luc, The General Theory of Homogenization. Springer-Verlag. 
+</ul>
+	
+<ul>
+2. Allaire, Gregoire, Shape Optimization by the Homogenization Method. Springer-Verlag.
+</ul>
+</li>
+
+ 
+</ul>
+</li>
+	
+<br>
+<h3>
+Some Past Research Projects: 
+</h3>
+
+<ul>
+<a href="https://drive.google.com/file/d/1Gk-w0T6oLZto8txwFRBaOTu-9YbrjpM4/view?usp=drive_link">The Malgrange-Ehrenpreis Theorem.</a>
+</ul>
+<ul>
+<a href="https://drive.google.com/file/d/15wMsrHhcRQQApvHk7xdVpAX0TmeFmmnc/view?usp=drive_link">Long time behaviour of evolution equations using Entropy method.</a>
+</ul>
+<ul>
+<a href="https://drive.google.com/file/d/1HpEiVVWmxCrJmwgiNQ1pntj-89iOHXGZ/view?usp=drive_link">On the Homogenization of Maxwell Equations.</a>
+</ul>
+<ul>
+<a href="https://drive.google.com/file/d/17bipG3V19bnXN9CbQAnPBHQ3BHzt_tj3/view?usp=drive_link">On Inverse Problems for Dynamical Sysytem.</a>
+</ul>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr/><hr/>
+<h3>Links:</h3>
+<ul>
+<li><a href="https://www.hri.res.in/~libweb/">HRI Library</a>.</li>
+</ul>
+<ul>
+<li><a href="https://rga-hri.github.io/AT/ist.html"target="Seminars on Harmonic Analysis and PDEs"> Seminars on Harmonic Analysis and PDEs</a></li>
+</ul>
+<ul>
+<li><a href="https://www.hri.res.in/~analysis/2024/Welcome.html"target="Workshop on Harmonic Analysis: Fourier Multipliers and Related Topics"> Workshop on Harmonic Analysis: Fourier Multipliers and Related Topics </a></li>
+</ul>
+
+<br>
+
+</body>
+</html>
+
