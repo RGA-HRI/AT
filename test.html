@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,15 +76,14 @@
 </head>
 <body>
   
-    
-
-	<div class="rc_nav" id="centered_nav">
+    <div class="rc_nav" id="centered_nav">
     <a href="https://www.hri.res.in/~mathgradp/mathprog.html" title="Math Prog. at HRI">Math Prog. at HRI</a>
 	<!--a href="https://www.hri.res.in/"target="Harish-Chandra Research Institute">Harish-Chandra Research Institute</a> --->
 	<a href="https://www.hri.res.in/~tuhinghosh/" title="Research web-page (Tuhin Ghosh)">Research web-page (Tuhin Ghosh)</a>
     <a href="https://rga-hri.github.io/AT/arg.html"> Course Activity in Analysis at HRI </a>
     <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    
    
     
     <script>
@@ -102,35 +100,66 @@
     </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research web-page (Tuhin Ghosh)</title>
 
-  <link rel="stylesheet" href="style.css">
+
+
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+history.replaceState(null, "", "");
+</script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--  <link rel="stylesheet" href="/resources/demos/style.css" /> -->
+  <script>
+  $(function() {
+    $( "div#C" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#E" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RI" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RP1" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RP2" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#S" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#L" ).accordion({active: false, collapsible: true, header: "h4"});    
+    $( "div#T" ).tabs({active: 15});
+function getAnchor(url)
+{
+    var index = url.lastIndexOf('#');
+    if (index != -1)
+        return url.substring(index);
+}
+currentAnchor = getAnchor(location.href).substring(1);
+if (currentAnchor != '')
+{
+        console.log(currentAnchor);
+        $( "div#T" ).tabs({active: currentAnchor});
+}
+  });
+history.replaceState(null, "", "" + currentAnchor);
+ </script>
+<title>
+Research web-page (Tuhin Ghosh)
+</title>
+<base target="_blank">
 </head>
 <body>
 <br>
-	<center>
-	My area of interest as a researcher is the analysis of partial differential equations (PDEs) originating from mathematical physics.
-</center>
+ 
+
 <br><hr>
 
 	
-<h3> Research Interests  </h3>
+<h3> My area of interest as a researcher is the analysis of partial differential equations (PDEs) originating from mathematical physics. </h3>
 <div id='T'>
 <ul>
-<li><a HREF='#C'>Year I  </a>
+<li><a HREF='#C'>  Research Interests </a>
 
 </ul>
 
 
 <div id="C">
-<ul>
-
 <li> Topics in Analysis and PDEs
 	
 <ul>
@@ -159,58 +188,9 @@ Homogenization processes provide a macro scale approximation to a problem with 
 </li>
 
 
-</div>
 
-
-<div id="E">	
-<ul>
-
-<li>
-Analysis III 
-</li>
-
-<ul>	
-° Distributions, Fundamental solutions, Sobolev Spaces. 
-</ul>
-
-<ul>
-° L^2 theory of Linear Elliptic equations, Stability estimates, Regularity results.
-</ul>
-
-<ul>
-° Linear Evolution equations, Cauchy problem,  Galerkin's approach, Semigroup Theory.
-</ul>
-
-</ul>
-</li>
-
-<li> Analysis III_A 
-
-<ul>
-° Instructor-  Dr. Tuhin Ghosh.
-</ul>
-<ul>
-°° 
-	<a href="https://www.dropbox.com/scl/fi/s19kvrn7jhdk3bniu0psi/Analysis_III.pdf?rlkey=kpdsb2er9o25fxwvlzc7j5mdw&st=kl6d0idy&dl=0">Lecture notes</a>
-</ul>
-</li>
-
-<li> Analysis III_B
-
-<ul>
-° Instructor(s)-  Dr. Tuhin Ghosh, Dr. Saumyajit Das, Dr. Tanvi
-</ul>
-<ul>
-°° 
-	<a href="https://www.dropbox.com/scl/fi/owyl8c8vef59e7vtquabs/Analysis_IV.pdf?rlkey=f7dzv1cpjf2dpwobtns5vykar&st=wgretyoo&dl=0">Lecture notes</a>
-</ul>
-</li>
 </div>
 </div>
-
-<br><hr>
-	
-
 
 	
 	
