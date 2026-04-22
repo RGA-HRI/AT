@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,15 +76,14 @@
 </head>
 <body>
   
-    
-
-	<div class="rc_nav" id="centered_nav">
+    <div class="rc_nav" id="centered_nav">
     <a href="https://www.hri.res.in/~mathgradp/mathprog.html" title="Math Prog. at HRI">Math Prog. at HRI</a>
 	<!--a href="https://www.hri.res.in/"target="Harish-Chandra Research Institute">Harish-Chandra Research Institute</a> --->
 	<a href="https://www.hri.res.in/~tuhinghosh/" title="Research web-page (Tuhin Ghosh)">Research web-page (Tuhin Ghosh)</a>
     <a href="https://rga-hri.github.io/AT/arg.html"> Course Activity in Analysis at HRI </a>
     <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    
    
     
     <script>
@@ -102,183 +100,260 @@
     </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research web-page (Tuhin Ghosh)</title>
 
-  <link rel="stylesheet" href="style.css">
+
+
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+history.replaceState(null, "", "");
+</script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--  <link rel="stylesheet" href="/resources/demos/style.css" /> -->
+  <script>
+  $(function() {
+    $( "div#C" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#E" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RI" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RP1" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#RP2" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#S" ).accordion({active: false, collapsible: true, header: "h4"});
+    $( "div#L" ).accordion({active: false, collapsible: true, header: "h4"});    
+    $( "div#T" ).tabs({active: 15});
+function getAnchor(url)
+{
+    var index = url.lastIndexOf('#');
+    if (index != -1)
+        return url.substring(index);
+}
+currentAnchor = getAnchor(location.href).substring(1);
+if (currentAnchor != '')
+{
+        console.log(currentAnchor);
+        $( "div#T" ).tabs({active: currentAnchor});
+}
+  });
+history.replaceState(null, "", "" + currentAnchor);
+ </script>
+<title>
+Research web-page (Tuhin Ghosh)
+</title>
+<base target="_blank">
 </head>
 <body>
-
-
-
 <br>
-
-<h3>Research</h3>
-
-My area of interest as a researcher is the analysis of partial differential equations (PDEs) originating from mathematical physics.
-
-<br>	
-
-<h3>Alma mater</h3>
 	
-I graduated from <a href="https://www.math.tifrbng.res.in/">TIFR</a> Bangalore Centre, upon receiving a Ph.D. in Mathematics, under the supervision of Professor M. Vanninathan, with a thesis on “Homogenization Issues in PDEs Arising in Applications”. 
-I attended <a href="https://presiuniv.ac.in/web/">Presidency</a> College in Calcutta for my undergraduate studies.
+<h3> Research Interest </h3>
+<div id='T'>
+<ul>
+<li><a HREF='#C'> ¬ </a>
+<li><a HREF='#D'>  Core Topics </a>
+<li><a HREF='#E'> Alma mater </a>
+</ul>
 
 
-<br>
-I held postdoctoral positions at <a href="https://hkust.edu.hk/">IAS, HKUST</a>, Hong Kong, and at <a href="https://www.washington.edu/">UW</a>, Seattle, in the inverse problem group of Professor  G. Uhlmann; and at the <a href="https://www.uni-bielefeld.de/">Uni Bielefeld</a>, in the analysis group of Professor M. Kassmann.
+<div id="C">
+My area of interest as a researcher is the analysis of partial differential equations (PDEs) originating from mathematical physics.	
+</div>
 
-	
-<br>
-<h3> Research Interests: </h3>
-
-<li> Topics in Analysis and PDEs
-	
+<div id="D">	
 <ul>
 								     
 <li>
-<U>Inverse Problems</U> 
+Inverse Problems 
 	
 <br>
+	<br><hr>
 <ul>
-Mathematical inverse problems refer to a class of problems where the goal is to determine the unknown causes or parameters of a system based on observed data or measurements. A typical inverse problem is to recover the coefficients of a PDE, i.e. physical properties like conductivity, medium propagation, internal density distribution etc. from the boundary or exterior measurements.
+° Mathematical inverse problems refer to a class of problems where the goal is to determine the unknown causes or parameters of a system based on observed data or measurements. A typical inverse problem is to recover the coefficients of a PDE, i.e. physical properties like conductivity, medium propagation, internal density distribution etc. from the boundary or exterior measurements.
 </ul>
 <br>
 </li>
 <br>
 <li>
-<U>Homogenization</U> 
+Homogenization 
 
 <br>
+	<br><hr>
 <ul>
-Homogenization processes provide a macro scale approximation to a problem with heterogeneities at micro scale by suitably averaging out small scales and incorporating their effects on large scales. These effects are quantified by the so-called homogenized coefficients. A common thread is often projected in order to come up with their optimal bounds, spectral characterization etc. 
+° Homogenization processes provide a macro scale approximation to a problem with heterogeneities at micro scale by suitably averaging out small scales and incorporating their effects on large scales. These effects are quantified by the so-called homogenized coefficients. A common thread is often projected in order to come up with their optimal bounds, spectral characterization etc. 
 </ul>
 </li>
 
  
 </ul>
 </li>
-	
-<br>
-<h3>
-Publication & Preprints: 
-</h3>
-I’m grateful to all of my collaborators. See <a href="https://scholar.google.com/citations?user=x1dv71cAAAAJ&hl=en">Google Scholar</a> or, 
+</div>
 
-<br>
-<h3>
-Preprints: 
-</h3>
+<div id="E">
+
 <ul>
-Cătălin Cârstea, Tuhin Ghosh. Inverse boundary value problems for certain doubly nonlinear parabolic and elliptic equations. <a href="https://arxiv.org/pdf/2603.08297">(arXiv)</a>
-</ul>
-<ul>
-Saumyajit Das, Tuhin Ghosh, Susovan Pramanik. Anisotropic Calderón problem for a logarithmic Schrödinger operator of order 2+ on closed Riemannian manifolds. <a href="https://arxiv.org/pdf/2511.02409">(arXiv)</a>
-</ul>
-<ul>
-Saumyajit Das, Tuhin Ghosh, Shiqi Ma. Inverse Scattering for the Fractional Schrödinger equation. <a href="https://arxiv.org/pdf/2509.12685">(arXiv)</a>
-</ul>
-<ul>
-Saumyajit Das, Tuhin Ghosh. Fractional Borg-Levinson problem with small non-negative potential of small growth. <a href="https://arxiv.org/pdf/2508.06998">(arXiv)</a>
-</ul>
-<ul>
-Ali Feizmohammadi, Tuhin Ghosh, Katya Krupchyk, Angkana Rüland, Johannes Sjöstrand, Gunther Uhlmann. Fractional anisotropic Calderón problem with external data. <a href="https://arxiv.org/pdf/2502.00710">(arXiv)</a>
-</ul>
-<ul>
-Tuhin Ghosh, Gunther Uhlmann. The Calderón problem for nonlocal operators. <a href="https://arxiv.org/abs/2110.09265">(arXiv)</a>
-</ul>
-<ul>
-Tuhin Ghosh, Venkateswaran P.Krishnan, Muthusamy Vanninathan. Inverse Diffusivity Problem via Homogenization Theory. <a href="https://arxiv.org/abs/1608.07529">(arXiv)</a>
+	
+° I graduated from <a href="https://www.math.tifrbng.res.in/">TIFR</a> Bangalore Centre, upon receiving a Ph.D. in Mathematics, under the supervision of Professor M. Vanninathan, with a thesis on “Homogenization Issues in PDEs Arising in Applications”. 
+I attended <a href="https://presiuniv.ac.in/web/">Presidency</a> College in Calcutta for my undergraduate studies.
 </ul>
 
-	
-<br>
-<h3>
-Published: 
-</h3>
 <ul>
-Giovanni Covi, Tuhin Ghosh, Angkana Rüland, Gunther Uhlmann. A Reduction of the Fractional Calderón Problem to the Local Calderón Problem by Means of the Caffarelli-Silvestre Extension. Journal de Mathématiques Pures et Appliquées. <a href="https://doi.org/10.1016/j.matpur.2026.103886">(Link)</a>
+° I held postdoctoral positions at <a href="https://hkust.edu.hk/">IAS, HKUST</a>, Hong Kong, and at <a href="https://www.washington.edu/">UW</a>, Seattle, in the inverse problem group of Professor  G. Uhlmann; and at the <a href="https://www.uni-bielefeld.de/">Uni Bielefeld</a>, in the analysis group of Professor M. Kassmann.
+
+</ul>
+		
+
+</div>	
+</div>
+<br><hr>
+
+	
+	
+<h3> Publication & Preprints </h3>
+<div id='T'>
+<ul>
+<li><a HREF='#S'> ¬ </a>
+<li><a HREF='#L'>Preprints</a>
+<li><a HREF='#R'>Published</a>
+
+</ul>
+
+
+<div id="S">
+I’m grateful to all of my collaborators. See <a href="https://scholar.google.com/citations?user=x1dv71cAAAAJ&hl=en">Google Scholar</a> or, use the above navigation bar. 
+</div>
+
+<div id="L">
+<ul>
+° Cătălin Cârstea, Tuhin Ghosh. Inverse boundary value problems for certain doubly nonlinear parabolic and elliptic equations. <a href="https://arxiv.org/pdf/2603.08297">(arXiv)</a>
+</ul>
+<ul>
+° Saumyajit Das, Tuhin Ghosh, Susovan Pramanik. Anisotropic Calderón problem for a logarithmic Schrödinger operator of order 2+ on closed Riemannian manifolds. <a href="https://arxiv.org/pdf/2511.02409">(arXiv)</a>
+</ul>
+<ul>
+° Saumyajit Das, Tuhin Ghosh, Shiqi Ma. Inverse Scattering for the Fractional Schrödinger equation. <a href="https://arxiv.org/pdf/2509.12685">(arXiv)</a>
+</ul>
+<ul>
+° Saumyajit Das, Tuhin Ghosh. Fractional Borg-Levinson problem with small non-negative potential of small growth. <a href="https://arxiv.org/pdf/2508.06998">(arXiv)</a>
+</ul>
+<ul>
+° Ali Feizmohammadi, Tuhin Ghosh, Katya Krupchyk, Angkana Rüland, Johannes Sjöstrand, Gunther Uhlmann. Fractional anisotropic Calderón problem with external data. <a href="https://arxiv.org/pdf/2502.00710">(arXiv)</a>
+</ul>
+<ul>
+° Tuhin Ghosh, Gunther Uhlmann. The Calderón problem for nonlocal operators. <a href="https://arxiv.org/abs/2110.09265">(arXiv)</a>
+</ul>
+<ul>
+° Tuhin Ghosh, Venkateswaran P.Krishnan, Muthusamy Vanninathan. Inverse Diffusivity Problem via Homogenization Theory. <a href="https://arxiv.org/abs/1608.07529">(arXiv)</a>
+</ul>
+	
+</div>
+
+<div id="R">
+
+<ul>
+° Giovanni Covi, Tuhin Ghosh, Angkana Rüland, Gunther Uhlmann. A Reduction of the Fractional Calderón Problem to the Local Calderón Problem by Means of the Caffarelli-Silvestre Extension. Journal de Mathématiques Pures et Appliquées. <a href="https://doi.org/10.1016/j.matpur.2026.103886">(Link)</a>
 </ul>	
 <ul>
-Cătălin Cârstea, Tuhin Ghosh, Gen Nakamura. An inverse boundary value problem for the inhomogeneous porous medium equation. SIAM Journal of Applied Mathematics. <a href="https://doi.org/10.1137/23M1623197">(Link)</a>
+° Cătălin Cârstea, Tuhin Ghosh, Gen Nakamura. An inverse boundary value problem for the inhomogeneous porous medium equation. SIAM Journal of Applied Mathematics. <a href="https://doi.org/10.1137/23M1623197">(Link)</a>
 </ul>
 <ul>
-Ali Feizmohammadi, Tuhin Ghosh, Katya Krupchyk, Gunther Uhlmann. Fractional anisotropic Calderón problem on closed Riemannian manifolds. Journal of Differential Geometry. <a href="https://doi.org/10.4310/jdg/1757353909">(Link)</a>
+° Ali Feizmohammadi, Tuhin Ghosh, Katya Krupchyk, Gunther Uhlmann. Fractional anisotropic Calderón problem on closed Riemannian manifolds. Journal of Differential Geometry. <a href="https://doi.org/10.4310/jdg/1757353909">(Link)</a>
 </ul>
 <ul>
-Amrita Ghosh, Tuhin Ghosh. Unique continuation and inverse problem for an an-isotropic beam bending equation. Journal of Differential Equations. <a href="https://doi.org/10.1016/j.jde.2023.02.056">(Link)</a>
+° Amrita Ghosh, Tuhin Ghosh. Unique continuation and inverse problem for an an-isotropic beam bending equation. Journal of Differential Equations. <a href="https://doi.org/10.1016/j.jde.2023.02.056">(Link)</a>
 </ul>
 <ul>
-Loredana Balilescu, Carlos Conca, Tuhin Ghosh, Jorge San Martín, and Muthusamy Vanninathan. Bloch spectral analysis in the class of non-periodic laminates. Proceedings volume of the International Conference on Applied Mathematics and Numerical Methods <a href="https://doi.org/10.1051/itmconf/20224902001">(Link)</a>
+° Loredana Balilescu, Carlos Conca, Tuhin Ghosh, Jorge San Martín, and Muthusamy Vanninathan. Bloch spectral analysis in the class of non-periodic laminates. Proceedings volume of the International Conference on Applied Mathematics and Numerical Methods <a href="https://doi.org/10.1051/itmconf/20224902001">(Link)</a>
 </ul>
 <ul>
-Cătălin Cârstea, Tuhin Ghosh, Gunther Uhlmann. An inverse problem for the porous medium equation with a possibly singular absorption term. SIAM Journal on Mathematical Analysis. <a href="https://doi.org/10.1137/21M1465573">(Link)</a>
+° Cătălin Cârstea, Tuhin Ghosh, Gunther Uhlmann. An inverse problem for the porous medium equation with a possibly singular absorption term. SIAM Journal on Mathematical Analysis. <a href="https://doi.org/10.1137/21M1465573">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh. Nonlocal inverse problem with boundary response. Revista Matemática Iberoamericana, EMS.  <a href="https://doi.org/10.4171/RMI/1323">(Link)</a>
+° Tuhin Ghosh. Nonlocal inverse problem with boundary response. Revista Matemática Iberoamericana, EMS.  <a href="https://doi.org/10.4171/RMI/1323">(Link)</a>
 </ul>
 <ul>
-Sombuddha Bhattacharyya, Tuhin Ghosh. An Inverse Problem on Determining Second Order Symmetric Tensor for Perturbed Biharmonic Operator. Mathematische Annalen.  <a href="https://doi.org/10.1007/s00208-021-02276-6">(Link)</a>
+° Sombuddha Bhattacharyya, Tuhin Ghosh. An Inverse Problem on Determining Second Order Symmetric Tensor for Perturbed Biharmonic Operator. Mathematische Annalen.  <a href="https://doi.org/10.1007/s00208-021-02276-6">(Link)</a>
 </ul>
 <ul>
-Loredana Bălilescu, Carlos Conca, Tuhin Ghosh, Jorge San Martin, Muthusamy Vanninathan. Bloch wave spectral analysis in the class of generalized Hashin-Shtrikman micro-structures. Mathematical Models and Methods in Applied Sciences. <a href="https://doi.org/10.1142/S0218202522500129">(Link)</a>
+° Loredana Bălilescu, Carlos Conca, Tuhin Ghosh, Jorge San Martin, Muthusamy Vanninathan. Bloch wave spectral analysis in the class of generalized Hashin-Shtrikman micro-structures. Mathematical Models and Methods in Applied Sciences. <a href="https://doi.org/10.1142/S0218202522500129">(Link)</a>
 </ul>
 <ul>
-Sombuddha Bhattacharyya, Tuhin Ghosh, Gunther Uhlmann. Inverse Problem for Fractional-Laplacian with Lower Order Non-local Perturbations. Trans. Amer. Math. Soc. <a href="https://doi.org/10.1090/tran/8151">(Link)</a>
+° Sombuddha Bhattacharyya, Tuhin Ghosh, Gunther Uhlmann. Inverse Problem for Fractional-Laplacian with Lower Order Non-local Perturbations. Trans. Amer. Math. Soc. <a href="https://doi.org/10.1090/tran/8151">(Link)</a>
 </ul>
 <ul>
-Angkana Rüland, Tuhin Ghosh, Mikko Salo, Gunther Uhlmann. Uniqueness and reconstruction for the fractional Calderón problem with a single measurement. Journal of Functional Analysis. <a href="https://doi.org/10.1016/j.jfa.2020.108505">(Link)</a>
+° Angkana Rüland, Tuhin Ghosh, Mikko Salo, Gunther Uhlmann. Uniqueness and reconstruction for the fractional Calderón problem with a single measurement. Journal of Functional Analysis. <a href="https://doi.org/10.1016/j.jfa.2020.108505">(Link)</a>
 </ul>
 <ul>
-Cherif Amrouche, Carlos Conca, Amrita Ghosh, Tuhin Ghosh. Uniform $W^{1,p}$ estimates for an elliptic operator with Robin boundary condition in a $\Cal C^1$ domain. Calc. Var. Partial Differential Equations. <a href="https://doi.org/10.1007/s00526-020-1713-y">(Link)</a>
+° Cherif Amrouche, Carlos Conca, Amrita Ghosh, Tuhin Ghosh. Uniform $W^{1,p}$ estimates for an elliptic operator with Robin boundary condition in a $\Cal C^1$ domain. Calc. Var. Partial Differential Equations. <a href="https://doi.org/10.1007/s00526-020-1713-y">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh, Mikko Salo, Gunther Uhlmann. The Calderón problem for the fractional Schrödinger equation.  Analysis & PDE. <a href="https://doi.org/10.2140/apde.2020.13.455">(Link)</a>
+° Tuhin Ghosh, Mikko Salo, Gunther Uhlmann. The Calderón problem for the fractional Schrödinger equation.  Analysis & PDE. <a href="https://doi.org/10.2140/apde.2020.13.455">(Link)</a>
 </ul>
 <ul>
-Loredanda Bălilescu, Amrita Ghosh, Tuhin Ghosh. $H$-convergence and homogenization of non-local elliptic operators in both perforated and non-perforated domains. Z. Angew. Math. Phys. <a href="https://doi.org/10.1007/s00033-019-1213-0">(Link)</a>
+° Loredanda Bălilescu, Amrita Ghosh, Tuhin Ghosh. $H$-convergence and homogenization of non-local elliptic operators in both perforated and non-perforated domains. Z. Angew. Math. Phys. <a href="https://doi.org/10.1007/s00033-019-1213-0">(Link)</a>
 </ul>
 <ul>
-Sombuddha Bhattacharyya, Tuhin Ghosh. Inverse boundary value problem of determining up to a second order tensor appear in the lower order perturbation of a polyharmonic operator. J. Fourier Anal. Appl.  <a href="https://doi.org/10.1007/s00041-018-9625-3">(Link)</a>
+° Sombuddha Bhattacharyya, Tuhin Ghosh. Inverse boundary value problem of determining up to a second order tensor appear in the lower order perturbation of a polyharmonic operator. J. Fourier Anal. Appl.  <a href="https://doi.org/10.1007/s00041-018-9625-3">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh, Ashwin Tarrikere.  Approximate isotropic cloak for the Maxwell equations. J. Math. Phys. <a href="https://doi.org/10.1063/1.4989407">(Link)</a>
+° Tuhin Ghosh, Ashwin Tarrikere.  Approximate isotropic cloak for the Maxwell equations. J. Math. Phys. <a href="https://doi.org/10.1063/1.4989407">(Link)</a>
 </ul>
 <ul>
-Loredana Bălilescu, Carlos Conca, Tuhin Ghosh, Jorge San Martin, Muthusamy Vanninathan. The dispersion tensor and its unique minimizer in Hashin-Shtrikman micro-structures. Arch. Ration. Mech. Anal.  <a href="https://doi.org/10.1007/s00205-018-1255-z">(Link)</a>
+° Loredana Bălilescu, Carlos Conca, Tuhin Ghosh, Jorge San Martin, Muthusamy Vanninathan. The dispersion tensor and its unique minimizer in Hashin-Shtrikman micro-structures. Arch. Ration. Mech. Anal.  <a href="https://doi.org/10.1007/s00205-018-1255-z">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh, Karthik Iyer.  Cloaking for a quasi-linear elliptic partial differential equation. Inverse Probl. Imaging.  <a href="https://doi/10.3934/ipi.2018020">(Link)</a>
+° Tuhin Ghosh, Karthik Iyer.  Cloaking for a quasi-linear elliptic partial differential equation. Inverse Probl. Imaging.  <a href="https://doi/10.3934/ipi.2018020">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh, Yi-Hsuan Lin, Jingni Xiao. The Calderón problem for variable coefficients nonlocal elliptic operators. Comm. Partial Differential Equations.  <a href="https://doi/full/10.1080/03605302.2017.1390681">(Link)</a>
+° Tuhin Ghosh, Yi-Hsuan Lin, Jingni Xiao. The Calderón problem for variable coefficients nonlocal elliptic operators. Comm. Partial Differential Equations.  <a href="https://doi/full/10.1080/03605302.2017.1390681">(Link)</a>
 </ul>
 <ul>
-Grégoire Allaire, Tuhin Ghosh, Muthusamy Vanninathan. Homogenization of Stokes system using Bloch waves. Netw. Heterog. Media.  <a href="https://doi/10.3934/nhm.2017022">(Link)</a>
+° Grégoire Allaire, Tuhin Ghosh, Muthusamy Vanninathan. Homogenization of Stokes system using Bloch waves. Netw. Heterog. Media.  <a href="https://doi/10.3934/nhm.2017022">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh, Muthusamy Vanninathan. Convergence relative to a microstructure: properties, optimal bounds and application. J. Abstr. Differ. Equ. Appl.  <a href="https://arxiv.org/abs/1608.04603">(Link)</a>
+° Tuhin Ghosh, Muthusamy Vanninathan. Convergence relative to a microstructure: properties, optimal bounds and application. J. Abstr. Differ. Equ. Appl.  <a href="https://arxiv.org/abs/1608.04603">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh, Venkateswaran Krishnan. Determination of lower order perturbations of the polyharmonic operator from partial boundary data. Appl. Anal.  <a href="https://doi/full/10.1080/00036811.2015.1092522">(Link)</a>
+° Tuhin Ghosh, Venkateswaran Krishnan. Determination of lower order perturbations of the polyharmonic operator from partial boundary data. Appl. Anal.  <a href="https://doi/full/10.1080/00036811.2015.1092522">(Link)</a>
 </ul>
 <ul>
-Tuhin Ghosh. An inverse problem on determining upto first order perturbations of a fourth order operator with partial boundary data. Inverse Problems  <a href="https://iopscience.iop.org/article/10.1088/0266-5611/31/10/105009">(Link)</a>
+° Tuhin Ghosh. An inverse problem on determining upto first order perturbations of a fourth order operator with partial boundary data. Inverse Problems  <a href="https://iopscience.iop.org/article/10.1088/0266-5611/31/10/105009">(Link)</a>
 </ul>
 
+</div>
+</div>
+<br><hr>
 
-	
-<br>
-<br>
-<hr/><hr/>
-<h3>Links:</h3>
+		
+<h3> Miscellaneous </h3>
+<div id='T'>
 <ul>
-<li><a href="https://www.hri.res.in/~libweb/">HRI Library</a>.</li>
+<li><a HREF='#A'>News</a>
+<li><a HREF='#B'>Links</a>
+</ul>
+
+<div id="A">
+  <ul>
+° Upcoming event 12-13th May,'26 at HRI: <a href="https://sites.google.com/view/iwmd-hri/">International Women in Mathematics Day</a>
+</ul>
+<ul>
+° Advertisement of hiring postdocs against sanctioned <a href="">Core Reearch Grant, ANRF</a> will be announced later. 
+</ul>
+<ul>
+° Interested in taking visiting (two to three months duration) students under <a href="">NBHM Grant.</a>
+</ul>
+</div>
+
+
+<div id="B">
+<ul>
+<li><a href="">Mathematics Colloquium at HRI</a></li>
+</ul>
+<ul>
+<li><a href="https://www.hri.res.in/~receptiondesk/social/index.php">HRI Social</a></li>
+</ul>
+<ul>
+<li><a href="https://www.hri.res.in/~libweb/">HRI Library</a></li>
 </ul>
 <ul>
 <li><a href="https://sites.uci.edu/inverse/"target="Inverse Problems Seminar, UC Irvine">Inverse Problems Seminar, UC Irvine</a></li>
@@ -290,8 +365,11 @@ Tuhin Ghosh. An inverse problem on determining upto first order perturbations of
 <li><a href="https://www.hri.res.in/~analysis/2024/Welcome.html"target="Workshop on Harmonic Analysis: Fourier Multipliers and Related Topics"> Workshop on Harmonic Analysis: Fourier Multipliers and Related Topics </a></li>
 </ul>
 
-<br>
+</div>
+</div>
+	
 
+e-mail <a HREF='mailto:@hri.res.in'>tuhinghosh@hri.res.in</a>.
+	
 </body>
 </html>
-
